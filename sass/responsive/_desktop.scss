@@ -1,0 +1,130 @@
+/*
+  -------------
+    Nav Menu
+  -------------
+*/
+
+.main-navigation {
+  .container {
+    padding: 0;
+  }
+	ul {
+		li {
+			&:hover {
+				background-color: darken( $color__background-menu, 15%);
+        color: $color__text-main;
+			}
+		}
+	}
+}
+
+/*
+  -----------------
+    Home Template
+  -----------------
+*/
+
+//Swiper Section
+.swiper-wrapper {
+  height: 700px;
+  display: flex;
+}
+
+//Section Welcome text
+.welcome-text {
+  img {
+    display: none;
+    margin-top: 0;
+  }
+}
+// Home Visit Section
+.home-visit-desktop {
+  display: block;
+  height: 500px;
+  text-align: center;
+  background-repeat: no-repeat;
+  background-size: 100% 500px;
+  background-color: white;
+  h2 {
+    padding: 100px 0 20px 0;
+  }
+  p {
+    @include font-size(1.5);
+  }
+}
+.home-visit-mobile {
+  display: none;
+}
+
+/*
+  --------------------
+    About Us Template
+  --------------------
+*/
+ .section-about-advices {
+  .margin-left {
+    margin-left: 24px;
+  }
+  .margin-right {
+    margin-right: 24px;
+  }
+ }
+/*
+  --------------------
+    Services Template
+  --------------------
+*/
+// Services Text section
+.services-text-section {
+  h1 {
+    padding-top: 50px;
+  }
+}
+// Table Section
+.services-table-section {
+  padding: 0 100px 50px 100px;
+}
+
+/*
+  -------------------
+    Contact Template
+  -------------------
+*/
+
+// Contact section
+  .contact-map-container {
+    border: 3px solid;
+    color: $color__background-menu;
+    padding: 0!important;
+    height: 100%;
+    margin-top: 50px;
+  }
+  .contact-section {
+    input[type=text],input[type=email],textarea {
+      width: 450px !important;
+    }
+    i:first-child {
+      margin-bottom: 20px !important;
+    }
+  .contact-form-container {
+    padding: 0;
+  }
+  }
+/*
+  -------------
+    Footer
+  -------------
+*/
+
+.footer {
+	text-align: left;
+  .copyright-text{
+    text-align: center;
+  }
+  .padding-social {
+    padding: 0;
+	}
+  a:hover {
+    color: $color__links-footer-hover;
+  }
+}
